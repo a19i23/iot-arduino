@@ -1,6 +1,5 @@
 #include <SPI.h>
-#include <Ethernet.h>
-#include <WiFi.h>
+#include <WiFi101.h>
 #include <IPStack.h>
 #include <Countdown.h>
 #include <MQTTClient.h>
@@ -28,7 +27,7 @@ MQTT::Client<IPStack, Countdown, 100, 1> client = MQTT::Client<IPStack, Countdow
 String deviceEvent;
 
 char ssid[] = "Jdog";     //  your network SSID (name)
-char pass[] = "Your Wifi Password";  // your network password
+char pass[] = "kingdom70";  // your network password
 int status = WL_IDLE_STATUS;     // the Wifi radio's status
 
 void setup() {
