@@ -60,7 +60,7 @@ void setup() {
 }
 
 void loop() {
-  int rc = -1;
+  byte rc = -1;
   if (!client.isConnected()) {
     Serial.println("Connecting to IoT Foundation for publishing Temperature");
     while (rc != 0) {
